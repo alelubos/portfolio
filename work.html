@@ -66,19 +66,20 @@
         <div class="padding-3">
           <h2>Meet-App</h2>
           <p>
-            This App gets a list of upcoming Development events around the
-            world. It is a PWA written with a TDD approach, it consumes a
-            Google Calendar API with Serverless functions and an OAuth2
-            Authorization server to login with a Google account. The UI was built with
-            React, and includes chart visualizations that respond to changing
-            events.
+            This App gets a list of fictitious upcoming Development events around the
+            world. It is a Progressive Web Application (PWA) written with a Test Driven 
+            Development (TDD) approach. The data comes from a private Google Calendar 
+            (using Serverless functions to fetch the Google Calendar API). 
+            It also implements an OAuth2 Authorization server, for user to login with a Google account. 
+            The UI was built with React and includes chart visualizations that 
+            respond to changing events.
             
           </p>
           <a href="https://alelubos.github.io/meet-app/" target="_blank">
-            <button>Visit GitHub Page</button>
+            <button>GitHub Repo</button>
           </a>
           <a href="https://alelubos.github.io/meet-app/" target="_blank">
-            <button>Visit Website</button>
+            <button class="brown-background">Visit Website</button>
           </a>
         </div>
         
@@ -94,18 +95,19 @@
         <div class="projects-grid__item blue-background">
           <h2>TopFlix Angular</h2>
           <p>
-            A Single Page Movies Application. Users can
-            register and login to view Movies, Genres, Directors, Synopsis & like
+            A Single Page Application (SPA) about movies. Users can
+            register/login to view a list of recommended movies and display their  
+            details like: Genres, Directors, Synopsis and select 
             their favorites ones. Built with Angular, TypeScript & Angular Material. 
-            Together with the myFlix backend API, conforms a <strong>MEAN fullstack Application</strong>.
+            Together with the myFlix backend API, conforms a <strong>MEAN fullstack App</strong>.
           </p>
-          <a href="https://github.com/alelubos/myFlix-Angular-client" target="_blank">
-            <button>See GitHub Page</button>
+          
+          <a href="https://github.com/alelubos/myFlix-Angular-client" target="_blank"
+            ><button>GitHub Repo</button>
           </a>
-        <a href="https://alelubos.github.io/myFlix-Angular-client/" target="_blank"
-          ><button>Open the App</button></a
-        >
-
+          <a href="https://alelubos.github.io/myFlix-Angular-client/" target="_blank"
+            ><button class="brown-background">Visit Website</button>
+          </a>
           <img
             src="./img/topflix-angular.PNG"
             alt="image from TopFlix landing page"
@@ -117,13 +119,14 @@
           <div>
             <h2>TopFlix React</h2>
             <p>
-              A Single Page App for movies that consumes myFlix API. Users can
-              register and login to view Movies, Genres, Directors & choose
-              their favorites. Built with React, Redux and Bootstrap. The
-              fullstack conforms a <strong>MERN Application</strong>. 
+              A client-side Single Page Application (SPA) that showcases a list of recommended movies.
+              Users can: register their own account to login; create their own list of favorite 
+              movies that persists in server, and view details about movie plots,  
+              genres and Directors. Built with React, Redux and Bootstrap, TopFlix consumes the 
+              myFlix API conforming a <strong>MERN fullstack application</strong>. 
             </p>
             <a href="https://github.com/alelubos/myFlix-client" target="_blank">
-              <button>View on GitHub</button>
+              <button>GitHub Repo</button>
             </a>
           </div>
           <img
@@ -137,26 +140,27 @@
           <div>
             <h2>myFlix REST API</h2>
           <p>
-            A Web Server that provides information on movies. Built from the ground
-            up on top of Node.js, with Express and MongoDB. 
-            The Authentication & Authorization are implemented using JWT tokens. 
-            Since myFlix is a public API it is used as backend for both: Topflix-React & TopFlix-Angular
-            Applications. It is actually hosted on Heroku and the DataBase in Mongo Atlas.
+            A Public Web Server that provides several endpoints to query infromation about handpicked movies. 
+            Built from the ground up with Node.js, Express and MongoDB, it implements authentication & authorization 
+            using JWT tokens. myFlix serves as the backend for both applications: 
+            Topflix-React & TopFlix-Angular.
+           
           </p>
-            <a href="https://github.com/alelubos/my-flix">See project on GitHub</a>
+            <a href="https://github.com/alelubos/my-flix">GitHub Repo</a>
           </div>
           
         </div>
 
         <div class="projects-grid__item blue-background">
           <div>
-            <h2>Mobile Chat-App</h2>
+            <h2>Chat App</h2>
             <p>
-              A Chat Application for smartphones. Built with React Native, it uses Google's
-              Firebase -with its Real Time Firestore Database- to store the chat
-              history.
+              A mobile chat Application built with React Native and offline
+              capabilities, that consumes Google's Firebase -with its Firestore 
+              Database- for real-time interactions . Users can share pictures, 
+              photos and their current Geo-location.
             </p>
-            <a href="https://github.com/alelubos/chat-app"><button>View on GitHub</button></a>
+            <a href="https://github.com/alelubos/chat-app"><button>GitHub Repo</button></a>
           </div>
           <div>
             <img
@@ -174,14 +178,15 @@
 
 
         <div class="projects-grid__item">
-          <h2>Pokedex App</h2>
+          <h2>Pokedex</h2>
           <p>
-            A simple application that retrieves data from Pokemon characters 
-            through HTTP requests to a public API. Built with HTML, CSS, JavaScript, 
-            jQuery and Bootstrap. 
+            Pokedex is a simple application that fetches all Pokemon characters 
+            from a public API. Built with HTML, CSS, JavaScript, 
+            jQuery and styled using Bootstrap, users can search and display vector images 
+            and details from their favorite characters.  
           </p>
           <a href="https://github.com/alelubos/pokedex" target="_blank">
-            <button>View on GitHub</button>
+            <button>GitHub Repo</button>
           </a>
             <img
             src="./img/pokedex-image.PNG"
@@ -212,13 +217,15 @@
           height="32"
           alt="Github"
         /></a>
-        <!-- <img
-          class="social-media__item"
-          src="img/twitter.svg"
-          width="32"
-          height="32"
-          alt="Twitter"
-        />
+        <a href="https://twitter.com/alelubos">
+          <img
+            class="social-media__item"
+            src="img/twitter.svg"
+            width="32"
+            height="32"
+            alt="Twitter"
+        /></a>
+        <!-- 
         <img
           class="social-media__item"
           src="img/linkedin.svg"

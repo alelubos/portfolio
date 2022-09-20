@@ -6,7 +6,7 @@
   --light-grey: #d3d3d3;
   --primary-color: #073d74;
   --primary-color-desaturated: #3870a8;
-  --primary-color-lightest: #99ccff;
+  --primary-color-lightest: hsl(210, 100%, 90%);
   --primary-color-saturated: #0070e0;
   --shade-tone1: #e9edf1;
   --shade-tone2: #dce3e9;
@@ -15,6 +15,7 @@
   --shade-tone5: #ebf0f4;
   --inset-shade: #073d7480;
   --white: #fff;
+  --brown: #8f4006;
 
   /* OTHERS */
   --font-thick: 700;
@@ -75,15 +76,19 @@ a.button:link {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--primary-color-saturated);
+  background-color: var(--primary-color-desaturated);
   color: var(--white);
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
-  /* gives the button a darker bottom border */
-  border-bottom: 2px solid var(--button-bottom-color);
+  border-radius: 4px;
   transition-duration: 0.5s;
   transition-property: opacity;
+  margin: 3px;
+  margin-bottom: 25px;
+}
+
+.brown-background {
+  background-color: var(--primary-color) !important;
 }
 
 button:hover,
@@ -92,6 +97,18 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.75;
+  background-color: var(--primary-color-desaturated);
+}
+
+.contact {
+  margin: auto;
+  margin-top: 130px;
+  max-width: 320px;
+  font-size: 18px;
+}
+
+.contact h2 {
+  font-size: 21px;
 }
 
 input[type='tel'],
@@ -161,12 +178,12 @@ form {
 
 .profile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   width: 80%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 2rem;
 }
@@ -176,6 +193,7 @@ form {
   height: auto;
   border-radius: 50%;
   margin: auto;
+  border: 3px solid var(--primary-color);
 }
 
 .profile__text-container {
@@ -194,10 +212,14 @@ form {
 }
 
 .projects-grid__item {
-  background-color: var(--shade-tone2);
+  background-color: white;
+  border: 1px solid var(--shade-tone3);
+  box-shadow: 2px 2px 5px var(--shade-tone3);
+  border-radius: 7px;
   padding: 10px;
   grid-column: span 1;
   grid-row: span 1;
+  margin: 7px;
 }
 
 .projects-grid__item--wide {
@@ -252,17 +274,16 @@ form {
 }
 
 .meet-app {
-  max-width: 1000px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 7px;
 }
 
 .myflix-api {
-  background-color: #f5f5f5;
-  border: 2px dashed var(--light-grey);
+  background-color: var(--primary-color-lightest);
   grid-column: span 1;
 }
 
@@ -274,13 +295,11 @@ form {
 .image-topflix-angular,
 .image-topflix-react,
 .image-pokedex {
-  margin-top: 7px;
   width: 475px;
   max-width: 99%;
 }
 .image-chat-app-1,
 .image-chat-app-2 {
-  margin-top: 7px;
   width: 225px;
   max-width: 47%;
   padding: 1%;
@@ -295,6 +314,14 @@ form {
   input[type='email'],
   textarea {
     width: 300px;
+  }
+
+  .meet-app {
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -311,6 +338,7 @@ form {
   .image-meet-app {
     max-width: 500px;
   }
+
   .myflix-api {
     grid-column: span 2;
     padding: 55px;
@@ -323,8 +351,13 @@ form {
   }
 
   .profile {
-    flex-direction: column;
-    width: 75%;
+    flex-direction: row;
+    width: 70%;
+    max-width: 600px;
+    margin: 50px auto 200px;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 2rem;
   }
 
   .profile__text-container {
@@ -332,7 +365,8 @@ form {
   }
 
   .meet-app {
-    max-width: 1000px;
+    max-width: 986px;
+    margin: 7px;
     margin: auto;
     display: flex;
     flex-direction: row;
