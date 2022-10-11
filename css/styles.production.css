@@ -28,6 +28,10 @@ h3 {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:link {
   color: #0070e0;
 }
@@ -36,14 +40,9 @@ a:visited {
   color: #3870a8;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #3870a8;
-}
-
+a:hover,
 a:focus {
-  text-decoration: none;
-  color: #3870a8;
+  color: #073d74;
 }
 
 a:active {
