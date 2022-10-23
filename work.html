@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,11 +23,6 @@
   </head>
   <body>
     <header class="page-header">
-      <img
-        class="page-header__item logo"
-        src="img/name-logo.JPG"
-        alt="text alejandro lubos as logo"
-      />
       <nav class="page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -66,11 +61,11 @@
         <div>
           <h2>Meet-App</h2>
           <p>
-            This App gets a list of fictitious upcoming Development events around the
+            This app gets a list of fictitious upcoming web development events around the
             world. It is a Progressive Web Application (PWA) written with a Test Driven 
             Development (TDD) approach. The data comes from a private Google Calendar, fetched
-            via the Google Calendar API using serverless functions. 
-            It also implements an OAuth2 authorization server, for users to login with their Google account credentials. 
+            via the Google Calendar API by the means of serverless functions. 
+            It also implements an OAuth2 server, for users to login with their Google account credentials. 
             The UI was built with React and includes chart visualizations that 
             respond to changing events.
             
@@ -95,11 +90,10 @@
         <div class="projects-grid__item blue-background">
           <h2>TopFlix Angular</h2>
           <p>
-            A Single Page Application (SPA) about movies. Users can
-            register/login to view a list of recommended movies and display their  
-            details like: Genres, Directors, Synopsis and select 
-            their favorites ones. Built with Angular, TypeScript & Angular Material. 
-            Together with the myFlix backend API, conforms a <strong>MEAN fullstack App</strong>.
+            A front-end Single Page Application (SPA) all about high-rated movies. Users of TopFlix can
+            register/login to view a list of all the films, display detailed information about their 
+            genre, director and synopsis, and marke their favorites ones. Built with Angular, TypeScript and Angular Material.<br> 
+            In conjunction with the myFlix web server, conforms a <strong>MEAN fullstack application</strong>.
           </p>
           
           <a href="https://github.com/alelubos/myFlix-Angular-client" target="_blank"
@@ -122,19 +116,18 @@
               A client-side Single Page Application (SPA) that showcases a list of recommended movies.
               Users can: register their own account to login; create their own list of favorite 
               movies that persists in server, and view details about movie plots,  
-              genres and Directors. Built with React, Redux and Bootstrap, TopFlix consumes the 
-              myFlix API conforming a <strong>MERN fullstack app</strong>. 
+              genres and directors. Built with React, Redux and Bootstrap, TopFlix consumes the 
+              myFlix API conforming a <strong>MERN fullstack application</strong>. 
             </p>
             <a href="https://github.com/alelubos/myFlix-client" target="_blank">
               <button>GitHub Repo</button>
             </a>
-            <a href="files/case-study-topflix-React.pdf" target="_blank" download>
-              <button>Case Study</button>
-            </a>
             <a href="https://alelubos.github.io/myFlix-client/" target="_blank"
             ><button class="brown-background">Website</button>
             </a>
-
+            <a href="files/case-study-topflix-React.pdf" target="_blank" download>
+              <button>Case Study</button>
+            </a>
           </div>
           <img
             src="./img/topflix-react.PNG"
@@ -153,7 +146,9 @@
             Topflix-React & TopFlix-Angular applications.
            
           </p>
-            <a href="https://github.com/alelubos/my-flix">GitHub Repo</a>
+            <a href="https://github.com/alelubos/my-flix" target="_blank">
+              <button>GitHub Repo</button>
+            </a>
           </div>
           
         </div>
@@ -171,18 +166,12 @@
           </div>
           <div>
             <img
-              src="./img/chat-app-1.PNG"
+              src="./img/chat-app-mockup.PNG"
               alt="image of chat-app welcome screen on a mobile phone"
-              class="image-chat-app-1"
-            />
-            <img
-              src="./img/chat-app-2.PNG"
-              alt="image of chat-app chat room on a mobile phone"
-              class="image-chat-app-2"
+              class="image-chat-app"
             />
           </div>
         </div>
-
 
         <div class="projects-grid__item">
           <h2>Pokedex</h2>
@@ -217,12 +206,13 @@
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <a href="https://github.com/alelubos"><img
-          class="social-media__item"
-          src="img/github.svg"
-          width="32"
-          height="32"
-          alt="Github"
+        <a href="https://github.com/alelubos"
+          ><img
+            class="social-media__item"
+            src="img/github.svg"
+            width="32"
+            height="32"
+            alt="Github"
         /></a>
         <a href="https://twitter.com/alelubos">
           <img
@@ -232,14 +222,15 @@
             height="32"
             alt="Twitter"
         /></a>
-        <!-- 
-        <img
-          class="social-media__item"
-          src="img/linkedin.svg"
-          width="32"
-          height="32"
-          alt="LinkedIn"
-        /> -->
+        <a href="https://www.linkedin.com/in/lubos-alejandro">
+          <img
+            class="social-media__item"
+            src="img/linkedin.svg"
+            width="32"
+            height="32"
+            alt="LinkedIn"
+          />
+        </a>
       </div>
     </footer>
     <script src="js/tota11y.min.js"></script>

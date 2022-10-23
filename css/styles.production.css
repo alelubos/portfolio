@@ -2,19 +2,22 @@
   box-sizing: border-box;
 }
 
+html {
+  line-height: 1.6;
+}
 body {
   background-color: #f5f5f5;
   color: #3b3b3b;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 1.1rem;
   text-align: center;
 }
 
 h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  line-height: 2.2rem;
   color: #073d74;
 }
 
@@ -125,12 +128,12 @@ button:focus {
 .contact {
   margin: auto;
   margin-top: 130px;
-  max-width: 320px;
-  font-size: 18px;
+  width: 280px;
 }
 
 .contact h2 {
-  font-size: 21px;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 input[type='tel'] {
@@ -163,7 +166,7 @@ form {
 } */
 
 .blue-background {
-  background-color: hsl(210, 100%, 90%);
+  background-color: hsl(210, 100%, 93%);
 }
 
 .buenos-aires {
@@ -176,12 +179,13 @@ form {
 
 .navigation-list {
   list-style-type: none;
-  text-align: inherit;
+  text-align: right;
+  padding-left: 0px;
 }
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 12px;
 }
 
 .page-header {
@@ -216,14 +220,14 @@ form {
   justify-content: space-around;
   width: 80%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .profile__portrait {
-  width: 250px;
+  width: 235px;
   height: auto;
   border-radius: 50%;
   margin: auto;
@@ -231,9 +235,9 @@ form {
 }
 
 .profile__text-container {
-  line-height: 1rem;
-  width: 250px;
-  margin: 3rem auto;
+  line-height: 1.6rem;
+  width: 275px;
+  margin: 2rem auto;
 }
 
 .projects-grid {
@@ -247,7 +251,7 @@ form {
 
 .projects-grid__item {
   background-color: white;
-  box-shadow: 2px 2px 5px #d4dbe2;
+  box-shadow: 4px 4px 15px #d4dbe2;
   grid-column: span 1;
   grid-row: span 1;
   margin: 7px;
@@ -314,7 +318,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 7px;
 }
 
 .myflix-api {
@@ -326,14 +329,10 @@ form {
 .image-topflix-angular,
 .image-topflix-react,
 .image-pokedex {
-  width: 475px;
-  max-width: 99%;
+  max-width: 100%;
 }
-.image-chat-app-1,
-.image-chat-app-2 {
-  width: 225px;
-  max-width: 47%;
-  padding: 1%;
+.image-chat-app {
+  width: 100%;
 }
 
 @media all and (max-width: 500px) {
@@ -346,7 +345,6 @@ form {
   textarea {
     width: 300px;
   }
-
   .meet-app {
     margin: 7px;
     display: flex;
@@ -365,11 +363,12 @@ form {
     grid-column: span 1;
     grid-row: span 1;
   }
-
+  .navigation-list li {
+    margin-left: 20px;
+  }
   .image-meet-app {
     max-width: 500px;
   }
-
   .myflix-api {
     grid-column: span 2;
     padding: 55px;
@@ -380,21 +379,24 @@ form {
   .projects-grid {
     grid-gap: 10px;
   }
-
   .profile {
     flex-direction: row;
     width: 70%;
-    max-width: 600px;
-    margin: 50px auto 200px;
+    max-width: 700px;
+    margin: 50px auto 7rem;
     text-align: left;
-    padding-top: 50px;
+    padding-top: 65px;
     padding-bottom: 2rem;
   }
-
   .profile__text-container {
-    text-align: center;
+    text-align: left;
+    margin-left: 1.6rem;
+    width: 300px;
   }
-
+  .contact {
+    margin-top: 130px;
+    width: 370px;
+  }
   .meet-app {
     max-width: 986px;
     margin: 7px;
