@@ -63,14 +63,14 @@
     <section>
       <h1>Some of my Work</h1>
       <div class="projects-grid__item meet-app">
-        <div class="padding-3">
+        <div>
           <h2>Meet-App</h2>
           <p>
             This App gets a list of fictitious upcoming Development events around the
             world. It is a Progressive Web Application (PWA) written with a Test Driven 
-            Development (TDD) approach. The data comes from a private Google Calendar 
-            (using Serverless functions to fetch the Google Calendar API). 
-            It also implements an OAuth2 Authorization server, for user to login with a Google account. 
+            Development (TDD) approach. The data comes from a private Google Calendar, fetched
+            via the Google Calendar API using serverless functions. 
+            It also implements an OAuth2 authorization server, for users to login with their Google account credentials. 
             The UI was built with React and includes chart visualizations that 
             respond to changing events.
             
@@ -123,14 +123,18 @@
               Users can: register their own account to login; create their own list of favorite 
               movies that persists in server, and view details about movie plots,  
               genres and Directors. Built with React, Redux and Bootstrap, TopFlix consumes the 
-              myFlix API conforming a <strong>MERN fullstack application</strong>. 
+              myFlix API conforming a <strong>MERN fullstack app</strong>. 
             </p>
             <a href="https://github.com/alelubos/myFlix-client" target="_blank">
               <button>GitHub Repo</button>
             </a>
+            <a href="files/case-study-topflix-React.pdf" target="_blank" download>
+              <button>Case Study</button>
+            </a>
             <a href="https://alelubos.github.io/myFlix-client/" target="_blank"
-            ><button class="brown-background">Visit Website</button>
-          </a>
+            ><button class="brown-background">Website</button>
+            </a>
+
           </div>
           <img
             src="./img/topflix-react.PNG"
@@ -183,7 +187,7 @@
         <div class="projects-grid__item">
           <h2>Pokedex</h2>
           <p>
-            Pokedex is a simple application that fetches all Pokemon characters 
+            A front-end application that fetches Pokemon characters 
             from a public API. Built with HTML, CSS, JavaScript, 
             jQuery and styled using Bootstrap, users can search and display vector images 
             and details from their favorite characters.  

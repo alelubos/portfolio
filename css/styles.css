@@ -217,13 +217,15 @@ form {
 
 .projects-grid__item {
   background-color: white;
-  border: 1px solid var(--shade-tone3);
   box-shadow: 2px 2px 5px var(--shade-tone3);
-  border-radius: 7px;
   padding: 10px;
   grid-column: span 1;
   grid-row: span 1;
   margin: 7px;
+}
+
+.projects-grid__item p {
+  padding: 10px 20px;
 }
 
 .projects-grid__item--wide {
