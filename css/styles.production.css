@@ -285,6 +285,52 @@ form {
   margin: 0 0.4rem 1rem;
 }
 
+.tech-icons {
+  width: 100%;
+}
+.tech-icons__container {
+  width: 85%;
+  max-width: 660px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  margin: auto;
+}
+.tech-icon {
+  position: relative;
+  height: 40px;
+  width: 43px;
+  margin: 5px 10px 54px;
+  font-size: 0px;
+}
+.tech-icon__svg {
+  height: 100%;
+}
+.tech-icon:hover {
+  font-size: 0.8rem;
+  transform: scale(1.28);
+  transition: all ease 0.4s;
+}
+.tech-icon__tooltip {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  margin: auto;
+  padding: 2px;
+  padding-top: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: black;
+  font-size: inherit;
+}
+.tech-icon__tooltip:hover {
+  opacity: 1;
+  transition: opacity ease 0.3s;
+}
+
 @keyframes shade-move {
   0% {
     fill: #e9edf1;
