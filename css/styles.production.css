@@ -74,7 +74,7 @@ button:focus {
 }
 
 a.button:link {
-  border: none;
+  border: 2px solid #3870a8;
   display: inline-block;
   font-family: inherit;
   background-color: #3870a8;
@@ -130,18 +130,6 @@ textarea {
   margin-bottom: 10px;
   box-shadow: inset 0px 0px 2px #073d7480;
   border-radius: 5px;
-}
-
-form {
-  margin-bottom: 3rem;
-}
-/* table {
-  margin: auto;
-  margin-top: 40px;
-} */
-
-.blue-background {
-  background-color: hsl(210, 100%, 93%);
 }
 
 .navigation-list {
@@ -329,25 +317,6 @@ form {
   margin: auto;
   color: black;
   font-size: inherit;
-}
-
-@media all and (max-width: 500px) {
-  .projects-grid {
-    display: flex;
-    flex-direction: column;
-  }
-  input[type='tel'],
-  input[type='email'],
-  textarea {
-    width: 300px;
-  }
-  .meet-app {
-    margin: 7px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 @media all and (min-width: 500px) {
