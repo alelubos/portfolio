@@ -312,9 +312,10 @@ textarea {
   height: 100%;
 }
 .tech-icon__tooltip {
-  text-align: right;
-  position: relative;
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 108%;
+  transform: translate(-50%);
   color: black;
   font-size: inherit;
 }
