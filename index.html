@@ -18,13 +18,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link id="theme" rel="stylesheet" />
+    <script src="js/theme.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
   </head>
   <body>
     <header class="page-header">
       <nav class="page-header__item">
         <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <img
+              class="social-media__item"
+              src="img/light.svg"
+              onclick="toggleTheme()"
+              width="32"
+              height="32"
+              alt="toggle theme icon"
+            />
+          </li>
           <li role="presentation">
             <a href="index.html" role="menuitem" class="navigation-list__item"
               >Home</a
@@ -60,9 +71,9 @@
           Alejandro Lubos
         </h1>
         <p>
-          A caring man, husband, father and an eager and dedicated
-          <br />full-stack JavaScript Developer with sound analytical & creative
-          skills
+          A caring man, husband, father <br />
+          and an eager and dedicated <br />full-stack JavaScript Developer with
+          sound analytical & creative skills
         </p>
         <a href="work.html"><strong>Check out some of my code</strong></a>
       </div>
@@ -98,5 +109,6 @@
       </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/toggle-script.js"></script>
   </body>
 </html>

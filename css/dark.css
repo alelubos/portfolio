@@ -1,0 +1,12 @@
+:root {
+  --background-color: hsl(230, 34%, 24%);
+  --font-color: hsl(212, 16%, 87%);
+  --primary-color: hsl(35, 80%, 55%);
+  --primary-color-lighter: hsl(212, 95%, 75%);
+  --border: hsl(35, 65%, 65%);
+  --link: white;
+  --shade: hsla(212, 33%, 66%, 0.4);
+  --button-background: hsl(230, 43%, 34%);
+  --svg-color: invert(88%) sepia(24%) saturate(5398%) hue-rotate(181deg)
+    brightness(100%) contrast(95%);
+}
