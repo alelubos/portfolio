@@ -110,5 +110,9 @@
     </footer>
     <script src="js/tota11y.min.js"></script>
     <script src="js/toggle-script.js"></script>
+    <script>
+      if (!sessionStorage.getItem('theme'))
+        sessionStorage.setItem('theme', 'dark');
+    </script>
   </body>
 </html>
