@@ -163,7 +163,7 @@ button:focus {
   height: auto;
   border-radius: 50%;
   margin: auto;
-  border: 3px solid var(--border);
+  border: 5px solid var(--border);
 }
 
 .profile__text-container {
